@@ -1,22 +1,32 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'nuxt-personal-website',
+    title: 'Mustafa Güney | UX/UI Designer | Front-End Developer',
     htmlAttrs: {
       lang: 'en',
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      { hid: 'description', name: 'description', content: "I'm a UI/UX Designer & Front-End Developer based in Alanya, Turkey. I design mobile apps & websites also build interactive websites that run across platforms & devices." },
       { name: 'format-detection', content: 'telephone=no' },
+      { name: 'msapplication-TileColor', content: '#f7f7f7' },
+      { name: 'theme-color', content: '#f5f5f5'}
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [
+      { rel: 'apple-touch-icon', sizes: '180x180', href: '/fav/apple-touch-icon.png' },
+      { rel: 'icon', type: 'image/png', href: '/fav/favicon-32x32.png' },
+      { rel: 'icon', type: 'image/png', href: '/fav/favicon-16x16.png' },
+      { rel: 'manifest', href: '/fav/site.webmanifest' },
+      { rel: 'mask-icon', color: '#f7f7f7', href: '/fav/safari-pinned-tab.svg' }],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [],
-
+  css: [
+    { src: '@assets/fit.css', lang: 'scss' },
+    { src: '@assets/tailwind.css', lang: 'css' },
+    { src: '@assets/main.scss', lang: 'scss' },
+  ],
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [],
 
@@ -30,5 +40,12 @@ export default {
   modules: [],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {},
+  build: {
+    postcss: {
+      plugins: {
+        tailwindcss: {},
+        autoprefixer: {},
+      },
+    },
+  },
 }
