@@ -18,7 +18,7 @@ module.exports = {
     textColor: {
       white: '#FFFFFF',
       light: '#f7f7f7',
-      dark: '#222222',
+      dark: '#444444',
     },
     backgroundColor: {
       white: '#FFFFFF',
@@ -28,7 +28,7 @@ module.exports = {
 
     extend: {
       colors: {
-        dark: '#222222',
+        dark: '#444444',
         light:'#f7f7f7'
       }
     },

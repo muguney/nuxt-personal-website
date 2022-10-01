@@ -1,11 +1,25 @@
 <template>
-  <div class="flex justify-center gap-2">
-    <dribble class="fill-dark dark:fill-light" />
-    <behance class="fill-dark dark:fill-light" />
-    <instagram class="fill-dark dark:fill-light" />
-    <linkedin class="fill-dark dark:fill-light" />
-    <github class="fill-dark dark:fill-light" />
-    <email class="fill-dark dark:fill-light" />
+  <div class="flex justify-center gap-4">
+    <a href="https://dribbble.com/mustafaguney" target="_blank">
+      <dribble :class="iconColor()"
+    /></a>
+    <a href="https://www.behance.net/mustafagney" target="_blank"
+      ><behance :class="iconColor()"
+    /></a>
+    <a href="https://www.instagram.com/mmustafaguneyy" target="_blank"
+      ><instagram :class="iconColor()"
+    /></a>
+    <a
+      href="https://www.linkedin.com/in/mustafa-g%C3%BCney-57858220a/"
+      target="_blank"
+      ><linkedin :class="iconColor()"
+    /></a>
+    <a href="https://github.com/muguney" target="_blank"
+      ><github :class="iconColor()"
+    /></a>
+    <a href="mailto:mail@mustafaguney.com" target="_blank"
+      ><email :class="iconColor()"
+    /></a>
   </div>
 </template>
 
@@ -24,6 +38,11 @@ export default {
     linkedin,
     github,
     email,
+  },
+  methods: {
+    iconColor() {
+      return 'fill-dark dark:fill-light'
+    },
   },
 }
 </script>
