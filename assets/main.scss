@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Saira:wght@400;600&display=swap');
 
 $dark: #222222;
+$darkText : #444444;
 $light: #f7f7f7;
 
 html.light{
   background:$light;
-  color:$dark;
+  color:$darkText;
 }
 html.dark{
   background:$dark;
