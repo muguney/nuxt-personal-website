@@ -34,10 +34,10 @@ export default {
   components: true,
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: [],
+  buildModules: ['@nuxt/postcss8','@nuxtjs/color-mode'],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [],
+  modules: ['nuxt-svg-loader'],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
@@ -48,4 +48,7 @@ export default {
       },
     },
   },
+   colorMode: {
+    classSuffix: ""
+  }
 }
