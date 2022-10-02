@@ -4,38 +4,46 @@ export const profile = {
   profileTitle: 'UI/UX Designer & Front-End Developer',
   aboutMe:
     'Specialized in the field of UX / UI only for 16 years. (Freelancer.com) Istanbul, San Francisco, Europe, Australia, and has initiated the work of many Agencies and Startup. In 16 years, he designed the brands with important projects.',
+  socials: {
+    dribble: 'https://dribbble.com/mustafaguney',
+    behance: 'https://www.behance.net/mustafagney',
+    instagram: 'https://www.instagram.com/mmustafaguneyy',
+    linkedin: 'https://www.linkedin.com/in/mustafa-g%C3%BCney-57858220a',
+    github: 'https://github.com/muguney',
+    email: 'mail@mustafaguney.com'
+  }
 }
 export const projects = [
   {
     title: 'Alanya Belediyesi',
     scope: 'UI Design, Back-End, CMS',
-    coverImg : '/projects/alanya-belediyesi-web-sitesi-cover.jpg'
-  },
-  {
-    title: 'Proliz Mobile App',
-    scope: 'UX / UI Design',
-    coverImg : '/projects/proliz-mobile-app-cover.jpg'
+    coverImg : '/projects/project-example-cover.jpg'
   },
   {
     title: 'Alanya Belediyesi',
     scope: 'UI Design, Back-End, CMS',
-    coverImg : '/projects/alanya-belediyesi-web-sitesi-cover.jpg'
-  },
-  {
-    title: 'Proliz Mobile App',
-    scope: 'UX / UI Design',
-    coverImg : '/projects/proliz-mobile-app-cover.jpg'
+    coverImg : '/projects/project-example-cover.jpg'
   },
   {
     title: 'Alanya Belediyesi',
     scope: 'UI Design, Back-End, CMS',
-    coverImg : '/projects/alanya-belediyesi-web-sitesi-cover.jpg'
+    coverImg : '/projects/project-example-cover.jpg'
   },
   {
-    title: 'Proliz Mobile App',
-    scope: 'UX / UI Design',
-    coverImg : '/projects/proliz-mobile-app-cover.jpg'
-  }
+    title: 'Alanya Belediyesi',
+    scope: 'UI Design, Back-End, CMS',
+    coverImg : '/projects/project-example-cover.jpg'
+  },
+  {
+    title: 'Alanya Belediyesi',
+    scope: 'UI Design, Back-End, CMS',
+    coverImg : '/projects/project-example-cover.jpg'
+  },
+  {
+    title: 'Alanya Belediyesi',
+    scope: 'UI Design, Back-End, CMS',
+    coverImg : '/projects/project-example-cover.jpg'
+  },
 ]
 export const tools = [
   {

@@ -12,65 +12,49 @@
       <p class="mt-3 max-w-[1200px] text-center leading-relaxed">
         {{ profile.aboutMe }}
       </p>
-      <social-buttons class="mt-5 pt-5 border-t-[1px]" />
+      <social-buttons class="mt-5 pt-5 border-t-[1px] dark:border-gray-600" />
+      <!-- <h3 class="mt-32 mb-5 text-lg font-semibold">Tools & Langs</h3> -->
       <h3 class="mt-[65px] font-semibold text-lg">Tools & Langs</h3>
-      <icon-button :buttons="tools" class="mb-4 mt-5" :text="true" />
-      <icon-button :buttons="langs" class="mb-5" :text="true" />
-      <h3 class="mt-40 text-xl font-semibold">Projects</h3>
+      <icon-button :buttons="tools" class="mb-4 mt-5" :onlyIcon="false" />
+      <icon-button :buttons="langs" class="mb-5" :onlyIcon="false" />
+      <h3 class="mt-52 mb-5 text-xl font-semibold">Projects</h3>
 
-      <div class="media-gallery grid sd:grid-cols-2 lg:grid-cols-3 gap-3">
-
-
-
+      <div class="max-w-[1440px] grid sd:grid-cols-2 lg:grid-cols-3 gap-5">
+        <ProjectCard
+          v-for="(project, index) in projects"
+          :title="project.title"
+          :scope="project.scope"
+          :coverImg="project.coverImg"
+          :key="index"
+        />
       </div>
-
-      <div class="flex flex-row gap-5 mb-3">
-        <div
-          @click="$colorMode.preference = 'dark'"
-          class="
-            cursor-pointer
-            px-2
-            py-1
-            bg-white
-            rounded-md
-            text-dark
-            drop-shadow-md
-          "
-        >
-          Test Dark Theme
-        </div>
-        <div
-          @click="$colorMode.preference = 'light'"
-          class="
-            cursor-pointer
-            px-2
-            py-1
-            bg-white
-            rounded-md
-            text-dark
-            drop-shadow-md
-          "
-        >
-          Test Light Theme
-        </div>
-      </div>
+      <Footer />
     </div>
   </div>
 </template>
 
 <script>
-import { tools, langs, profile } from 'static/data'
-import iconButton from '~/components/iconButton.vue'
-import avatar from '~/components/avatar.vue'
-import SocialButtons from '../components/socialButtons.vue'
+import Footer from '../components/footer'
+import ProjectCard from '../components/projectCard'
+import { tools, langs, profile, projects } from 'static/data'
+import iconButton from '~/components/iconButton'
+import avatar from '~/components/avatar'
+import SocialButtons from '../components/socialButtons'
 export default {
-  components: { iconButton, SocialButtons, avatar },
+  components: {
+    Footer,
+    ProjectCard,
+    iconButton,
+    SocialButtons,
+    avatar,
+  },
   name: 'IndexPage',
   data() {
     return {
       profile: profile,
       tools: tools,
       langs: langs,
+      projects: projects,
     }
   },
   mounted() {},

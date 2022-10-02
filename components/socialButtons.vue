@@ -1,24 +1,53 @@
 <template>
   <div class="flex justify-center gap-4">
-    <a href="https://dribbble.com/mustafaguney" target="_blank">
-      <dribble :class="iconColor()"
-    /></a>
-    <a href="https://www.behance.net/mustafagney" target="_blank"
-      ><behance :class="iconColor()"
-    /></a>
-    <a href="https://www.instagram.com/mmustafaguneyy" target="_blank"
-      ><instagram :class="iconColor()"
+    <a
+      :href="socials.dribble"
+      target="_blank"
+      class="hover:scale-110 transition-transform"
+      alt="Dribble Porfolio"
+      title="Dribble Portfolio"
+    >
+      <dribble :class="iconColor"
     /></a>
     <a
-      href="https://www.linkedin.com/in/mustafa-g%C3%BCney-57858220a/"
+      :href="socials.behance"
       target="_blank"
-      ><linkedin :class="iconColor()"
+      alt="Behance Porfolio"
+      class="hover:scale-110 transition-transform"
+      title="Behance Portfolio"
+      ><behance :class="iconColor"
     /></a>
-    <a href="https://github.com/muguney" target="_blank"
-      ><github :class="iconColor()"
+    <a
+      :href="socials.instagram"
+      target="_blank"
+      class="hover:scale-110 transition-transform"
+      alt="Instagram"
+      title="Instagram"
+      ><instagram :class="iconColor"
     /></a>
-    <a href="mailto:mail@mustafaguney.com" target="_blank"
-      ><email :class="iconColor()"
+    <a
+      :href="socials.linkedin"
+      class="hover:scale-110 transition-transform"
+      target="_blank"
+      alt="Linkedin"
+      title="Linkedin"
+      ><linkedin :class="iconColor"
+    /></a>
+    <a
+      :href="socials.github"
+      target="_blank"
+      class="hover:scale-110 transition-transform"
+      alt="Github Projects"
+      title="Github Projects"
+      ><github :class="iconColor"
+    /></a>
+    <a
+      :href="`mailto:` + socials.email"
+      target="_blank"
+      class="hover:scale-110 transition-transform"
+      alt="Email to me"
+      title="Email to me"
+      ><email :class="iconColor"
     /></a>
   </div>
 </template>
@@ -30,7 +59,14 @@ import instagram from 'static/icons/instagram.svg'
 import linkedin from 'static/icons/linkedin.svg'
 import github from 'static/icons/github.svg'
 import email from 'static/icons/email.svg'
+import { profile } from 'static/data.js'
 export default {
+  data() {
+    return {
+      iconColor: 'fill-dark dark:fill-light',
+      socials: profile.socials,
+    }
+  },
   components: {
     dribble,
     behance,
@@ -38,11 +74,6 @@ export default {
     linkedin,
     github,
     email,
-  },
-  methods: {
-    iconColor() {
-      return 'fill-dark dark:fill-light'
-    },
   },
 }
 </script>
