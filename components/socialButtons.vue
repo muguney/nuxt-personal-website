@@ -51,7 +51,6 @@
     /></a>
   </div>
 </template>
-
 <script>
 import dribble from 'static/icons/dribble.svg'
 import behance from 'static/icons/behance.svg'
@@ -77,6 +76,5 @@ export default {
   },
 }
 </script>
-
 <style lang="scss" scoped>
 </style>

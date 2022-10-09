@@ -48,7 +48,8 @@ export default {
   components: false,
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: ['@nuxt/postcss8', '@nuxtjs/color-mode'],
+  target: 'static',
+  buildModules: ['@nuxt/postcss8', '@nuxtjs/color-mode','@nuxt/image'],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: ['nuxt-svg-loader'],

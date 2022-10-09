@@ -1,6 +1,7 @@
 <template>
   <div class="mt-[130px]">
-    <img
+    <nuxt-img
+      format="webp"
       class="
         rounded-full
         border-solid border-[5px] border-opacity-5 border-dark
@@ -25,6 +26,5 @@ export default {
   },
 }
 </script>
-
 <style lang="scss" scoped>
 </style>

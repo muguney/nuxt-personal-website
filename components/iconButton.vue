@@ -14,7 +14,7 @@
         drop-shadow-sm
       "
     >
-      <img
+      <nuxt-img
         :class="`fill-dark ${!onlyIcon ? 'mr-2' : null}`"
         :src="`icons/${item.svg}.svg`"
       />
@@ -22,7 +22,6 @@
     </a>
   </div>
 </template>
-
 <script>
 export default {
   props: {
@@ -31,5 +30,4 @@ export default {
   },
 }
 </script>
-
 <style lang="scss" scoped></style>

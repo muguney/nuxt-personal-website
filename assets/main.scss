@@ -1,14 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Saira:wght@400;600&display=swap');
 
-$dark: #1f1a2e;
-$darkText : #444444;
-$light: #f7f7f7;
-
 html.light{
-  background:$light;
-  color:$darkText;
+  background: #EDEDED;
+  background: linear-gradient(148deg, rgba(237,237,237,1) 0%, rgba(255,255,255,1) 34%, rgba(255,255,255,1) 66%, rgba(224,224,224,1) 100%);
+  color:#444444;
 }
 html.dark{
-  background:$dark;
-  color:$light;
+  background: #111111;
+  background: linear-gradient(148deg, rgb(9, 9, 10) 0%, rgb(28, 13, 36) 34%, rgb(4, 35, 54) 66%, #040b1e 100%);
+  color:#f7f7f7;
 }

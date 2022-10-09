@@ -13,13 +13,13 @@
         {{ profile.aboutMe }}
       </p>
       <social-buttons class="mt-5 pt-5 border-t-[1px] dark:border-gray-600" />
-      <!-- <h3 class="mt-32 mb-5 text-lg font-semibold">Tools & Langs</h3> -->
       <h3 class="mt-[65px] font-semibold text-lg">Tools & Langs</h3>
       <icon-button :buttons="tools" class="mb-4 mt-5" :onlyIcon="false" />
       <icon-button :buttons="langs" class="mb-5" :onlyIcon="false" />
       <h3 class="mt-52 mb-5 text-xl font-semibold">Projects</h3>
-
-      <div class="max-w-[1440px] grid sd:grid-cols-2 lg:grid-cols-3 gap-5">
+      <div
+        class="max-w-[1440px] grid sd:grid-cols-2 lg:grid-cols-3 gap-5 mb-10"
+      >
         <ProjectCard
           v-for="(project, index) in projects"
           :title="project.title"
@@ -32,14 +32,13 @@
     </div>
   </div>
 </template>
-
 <script>
-import Footer from '../components/footer'
-import ProjectCard from '../components/projectCard'
+import Footer from '~/components/footer'
+import ProjectCard from '~/components/projectCard'
 import { tools, langs, profile, projects } from 'static/data'
 import iconButton from '~/components/iconButton'
 import avatar from '~/components/avatar'
-import SocialButtons from '../components/socialButtons'
+import SocialButtons from '~/components/socialButtons'
 export default {
   components: {
     Footer,
