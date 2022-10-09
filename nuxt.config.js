@@ -46,7 +46,9 @@ export default {
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: false,
-
+  pageTransition: {
+    name: 'pages',
+  },
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   target: 'static',
   buildModules: ['@nuxt/postcss8', '@nuxtjs/color-mode','@nuxt/image'],
