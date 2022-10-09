@@ -15,35 +15,68 @@ export const profile = {
 }
 export const projects = [
   {
+    rowId: 1,
+    coverImg : '/projects/project-example-cover.jpg',
     title: 'Alanya Belediyesi',
-    scope: 'UI Design, Back-End, CMS',
-    coverImg : '/projects/project-example-cover.jpg'
+    scope: 'UI/UX Design, Back-End, CMS',
+    description: "Specialized in the field of UX / UI only for 16 years. (Freelancer.com) Istanbul, San Francisco, Europe, Australia, and has initiated the work of many Agencies and Startup. In 16 years, he designed the brands with important projects.",
+    images: [
+      {
+        rowId : 1,
+        imgUrl : "/projects/project-example-cover.jpg"
+      },
+      {
+        rowId : 2,
+        imgUrl : "/projects/project-example-cover.jpg"
+      },
+      {
+        rowId : 3,
+        imgUrl : "/projects/project-example-cover.jpg"
+      }
+    ]
   },
   {
-    title: 'Alanya Belediyesi',
-    scope: 'UI Design, Back-End, CMS',
-    coverImg : '/projects/project-example-cover.jpg'
+    rowId: 2,
+    coverImg : '/projects/project-example-cover.jpg',
+    title: 'Alanya Belediyesi Test',
+    scope: 'UI/UX Design, Back-End, CMS',
+    description: "Specialized in the field of UX / UI only for 16 years. (Freelancer.com) Istanbul, San Francisco, Europe, Australia, and has initiated the work of many Agencies and Startup. In 16 years, he designed the brands with important projects.",
+    images: [
+      {
+        rowId : 1,
+        imgUrl : "/projects/project-example-cover.jpg"
+      },
+      {
+        rowId : 2,
+        imgUrl : "/projects/project-example-cover.jpg"
+      },
+      {
+        rowId : 3,
+        imgUrl : "/projects/project-example-cover.jpg"
+      }
+    ]
   },
   {
-    title: 'Alanya Belediyesi',
-    scope: 'UI Design, Back-End, CMS',
-    coverImg : '/projects/project-example-cover.jpg'
-  },
-  {
-    title: 'Alanya Belediyesi',
-    scope: 'UI Design, Back-End, CMS',
-    coverImg : '/projects/project-example-cover.jpg'
-  },
-  {
-    title: 'Alanya Belediyesi',
-    scope: 'UI Design, Back-End, CMS',
-    coverImg : '/projects/project-example-cover.jpg'
-  },
-  {
-    title: 'Alanya Belediyesi',
-    scope: 'UI Design, Back-End, CMS',
-    coverImg : '/projects/project-example-cover.jpg'
-  },
+    rowId: 3,
+    coverImg : '/projects/project-example-cover.jpg',
+    title: 'Alanya Belediyesi Demo',
+    scope: 'UI/UX Design, Back-End, CMS',
+    description: "Specialized in the field of UX / UI only for 16 years. (Freelancer.com) Istanbul, San Francisco, Europe, Australia, and has initiated the work of many Agencies and Startup. In 16 years, he designed the brands with important projects.",
+    images: [
+      {
+        rowId : 1,
+        imgUrl : "/projects/project-example-cover.jpg"
+      },
+      {
+        rowId : 2,
+        imgUrl : "/projects/project-example-cover.jpg"
+      },
+      {
+        rowId : 3,
+        imgUrl : "/projects/project-example-cover.jpg"
+      }
+    ]
+  }
 ]
 export const tools = [
   {

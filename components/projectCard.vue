@@ -12,7 +12,7 @@
       transition-opacity
     "
   >
-    <nuxt-link :to="'/project/' + fixUrl(title)">
+    <nuxt-link :to="'/' + fixUrl(title)">
       <div
         class="
           absolute
@@ -33,11 +33,16 @@
         <h4 class="text-lg font-semibold dark:text-dark">{{ title }}</h4>
         <span class="dark:text-dark">{{ scope }}</span>
       </div>
-      <img :src="coverImg" width="100%" height="100%" class="object-center" />
+      <nuxt-img
+        format="webp"
+        :src="coverImg"
+        width="100%"
+        height="100%"
+        class="object-center"
+      />
     </nuxt-link>
   </div>
 </template>
-
 <script>
 import common from '~/mixins/common'
 export default {
@@ -49,6 +54,5 @@ export default {
   },
 }
 </script>
-
 <style lang="scss" scoped>
 </style>
