@@ -3,7 +3,10 @@
     class="
       max-w-[1440px]
       flex
-      justify-between
+      text-center
+      justify-center
+      flex-col
+      lg:flex-row
       w-full
       relative
       mt-10
@@ -13,45 +16,40 @@
       pb-4
     "
   >
-    <div>
-      © {{ new Date().getFullYear() }} {{ profile.name }},
-      <a
-        :href="`mailto:` + profile.socials.email"
-        class="font-semibold hover:opacity-80 transition-opacity"
-      >
-        {{ profile.socials.email }}</a
-      >
-    </div>
-    <div class="flex gap-2">
-      You can get the source codes of this website on my
-      <a
-        :href="profile.socials.github"
-        target="_blank"
-        class="flex gap-2 group"
-        alt="Github Projects"
-        title="Github Projects"
-        ><b>Github</b>
-        <github
-          class="
-            fill-dark
-            dark:fill-light
-            group-hover:scale-110
-            transition-transform
-          "
-      /></a>
-      <div
-        @click="$colorMode.preference = 'dark'"
-        v-if="$colorMode.value == 'light'"
-        class="cursor-pointer hover:scale-110 transition-transform"
-      >
-        <dark class="fill-dark dark:fill-light" />
-      </div>
-      <div
-        @click="$colorMode.preference = 'light'"
-        v-if="$colorMode.value == 'dark'"
-        class="cursor-pointer hover:scale-110 transition-transform"
-      >
-        <light class="fill-dark dark:fill-light" />
+    <div class="flex flex-col md:flex-row gap-2 justify-center">
+      <p>
+        You can get the source codes of this website on my
+        <a
+          :href="profile.socials.github"
+          target="_blank"
+          alt="Github Projects"
+          title="Github Projects"
+          ><b>Github</b></a
+        >
+      </p>
+      <div class="flex flex-row gap-2 justify-center">
+        <a
+          :href="profile.socials.github"
+          target="_blank"
+          alt="Github Projects"
+          title="Github Projects"
+        >
+          <github class="fill-dark dark:fill-light transition-transform"
+        /></a>
+        <div
+          @click="$colorMode.preference = 'dark'"
+          v-if="$colorMode.value == 'light'"
+          class="cursor-pointer hover:scale-110 transition-transform"
+        >
+          <dark class="fill-dark dark:fill-light" />
+        </div>
+        <div
+          @click="$colorMode.preference = 'light'"
+          v-if="$colorMode.value == 'dark'"
+          class="cursor-pointer hover:scale-110 transition-transform"
+        >
+          <light class="fill-dark dark:fill-light" />
+        </div>
       </div>
     </div>
   </div>

@@ -23,7 +23,7 @@ module.exports = {
     backgroundColor: {
       white: '#FFFFFF',
       light: '#f7f7f7',
-      dark: '#1f1a2e',
+      dark: '#040D20',
     },
 
     extend: {

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="flex flex-col justify-center items-center">
+    <div class="flex flex-col justify-center items-center p-5">
       <avatar
         :title="profile.name"
         :image="profile.avatarImg"
@@ -18,7 +18,14 @@
       <icon-button :buttons="langs" class="mb-5" :onlyIcon="false" />
       <h3 class="mt-52 mb-5 text-xl font-semibold">Projects</h3>
       <div
-        class="max-w-[1440px] grid sd:grid-cols-2 lg:grid-cols-3 gap-5 mb-10"
+        class="
+          max-w-[1440px]
+          grid grid-cols-1
+          md:grid-cols-2
+          lg:grid-cols-3
+          gap-5
+          mb-10
+        "
       >
         <ProjectCard
           v-for="(project, index) in projects"
@@ -29,6 +36,7 @@
         />
       </div>
       <Footer />
+      <scroll-top />
     </div>
   </div>
 </template>
@@ -39,6 +47,8 @@ import { tools, langs, profile, projects } from 'static/data'
 import iconButton from '~/components/iconButton'
 import avatar from '~/components/avatar'
 import SocialButtons from '~/components/socialButtons'
+import ScrollTop from '~/components/scrollTop.vue'
+
 export default {
   components: {
     Footer,
@@ -46,6 +56,7 @@ export default {
     iconButton,
     SocialButtons,
     avatar,
+    ScrollTop,
   },
   name: 'IndexPage',
   data() {
