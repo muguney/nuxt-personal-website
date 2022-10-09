@@ -3,80 +3,125 @@ export const profile = {
   avatarImg: 'avatar.jpg',
   profileTitle: 'UI/UX Designer & Front-End Developer',
   aboutMe:
-    'Specialized in the field of UX / UI only for 16 years. (Freelancer.com) Istanbul, San Francisco, Europe, Australia, and has initiated the work of many Agencies and Startup. In 16 years, he designed the brands with important projects.',
+    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
   socials: {
     dribble: 'https://dribbble.com/mustafaguney',
     behance: 'https://www.behance.net/mustafagney',
     instagram: 'https://www.instagram.com/mmustafaguneyy',
     linkedin: 'https://www.linkedin.com/in/mustafa-g%C3%BCney-57858220a',
     github: 'https://github.com/muguney',
-    email: 'mail@mustafaguney.com'
-  }
+    email: 'mail@mustafaguney.com',
+  },
 }
 export const projects = [
   {
     rowId: 1,
-    coverImg : '/projects/project-example-cover.jpg',
+    coverImg: '/projects/porfolio-cover-1.jpg',
     title: 'Alanya Belediyesi',
     scope: 'UI/UX Design, Back-End, CMS',
-    description: "Specialized in the field of UX / UI only for 16 years. (Freelancer.com) Istanbul, San Francisco, Europe, Australia, and has initiated the work of many Agencies and Startup. In 16 years, he designed the brands with important projects.",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
     images: [
       {
-        rowId : 1,
-        imgUrl : "/projects/project-example-cover.jpg"
+        rowId: 1,
+        imgUrl: '/projects/porfolio-1.jpg',
       },
       {
-        rowId : 2,
-        imgUrl : "/projects/project-example-cover.jpg"
+        rowId: 2,
+        imgUrl: '/projects/porfolio-2.jpg',
       },
-      {
-        rowId : 3,
-        imgUrl : "/projects/project-example-cover.jpg"
-      }
-    ]
+    ],
   },
   {
     rowId: 2,
-    coverImg : '/projects/project-example-cover.jpg',
-    title: 'Alanya Belediyesi Test',
+    coverImg: '/projects/porfolio-cover-2.jpg',
+    title: 'Mobile App',
     scope: 'UI/UX Design, Back-End, CMS',
-    description: "Specialized in the field of UX / UI only for 16 years. (Freelancer.com) Istanbul, San Francisco, Europe, Australia, and has initiated the work of many Agencies and Startup. In 16 years, he designed the brands with important projects.",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
     images: [
       {
-        rowId : 1,
-        imgUrl : "/projects/project-example-cover.jpg"
+        rowId: 1,
+        imgUrl: '/projects/porfolio-1.jpg',
       },
       {
-        rowId : 2,
-        imgUrl : "/projects/project-example-cover.jpg"
+        rowId: 2,
+        imgUrl: '/projects/porfolio-2.jpg',
       },
-      {
-        rowId : 3,
-        imgUrl : "/projects/project-example-cover.jpg"
-      }
-    ]
+    ],
   },
   {
     rowId: 3,
-    coverImg : '/projects/project-example-cover.jpg',
-    title: 'Alanya Belediyesi Demo',
+    coverImg: '/projects/porfolio-cover-1.jpg',
+    title: 'Alanya Belediyesi',
     scope: 'UI/UX Design, Back-End, CMS',
-    description: "Specialized in the field of UX / UI only for 16 years. (Freelancer.com) Istanbul, San Francisco, Europe, Australia, and has initiated the work of many Agencies and Startup. In 16 years, he designed the brands with important projects.",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
     images: [
       {
-        rowId : 1,
-        imgUrl : "/projects/project-example-cover.jpg"
+        rowId: 1,
+        imgUrl: '/projects/porfolio-1.jpg',
       },
       {
-        rowId : 2,
-        imgUrl : "/projects/project-example-cover.jpg"
+        rowId: 2,
+        imgUrl: '/projects/porfolio-2.jpg',
+      },
+    ],
+  },
+  {
+    rowId: 4,
+    coverImg: '/projects/porfolio-cover-2.jpg',
+    title: 'Mobile App',
+    scope: 'UI/UX Design, Back-End, CMS',
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+    images: [
+      {
+        rowId: 1,
+        imgUrl: '/projects/porfolio-1.jpg',
       },
       {
-        rowId : 3,
-        imgUrl : "/projects/project-example-cover.jpg"
-      }
-    ]
-  }
+        rowId: 2,
+        imgUrl: '/projects/porfolio-2.jpg',
+      },
+    ],
+  },
+  {
+    rowId: 5,
+    coverImg: '/projects/porfolio-cover-1.jpg',
+    title: 'Alanya Belediyesi',
+    scope: 'UI/UX Design, Back-End, CMS',
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+    images: [
+      {
+        rowId: 1,
+        imgUrl: '/projects/porfolio-1.jpg',
+      },
+      {
+        rowId: 2,
+        imgUrl: '/projects/porfolio-2.jpg',
+      },
+    ],
+  },
+  {
+    rowId: 6,
+    coverImg: '/projects/porfolio-cover-2.jpg',
+    title: 'Alanya Belediyesi',
+    scope: 'UI/UX Design, Back-End, CMS',
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+    images: [
+      {
+        rowId: 1,
+        imgUrl: '/projects/porfolio-1.jpg',
+      },
+      {
+        rowId: 2,
+        imgUrl: '/projects/porfolio-2.jpg',
+      },
+    ],
+  },
 ]
 export const tools = [
   {
