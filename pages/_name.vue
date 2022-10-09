@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col justify-center items-center">
+  <div class="flex flex-col justify-center items-center p-5">
     <header
       class="
         max-w-[1440px]
@@ -7,7 +7,8 @@
         items-center
         w-full
         relative
-        mt-20
+        mt-10
+        md:mt-20
         pb-10
       "
     >
@@ -15,12 +16,12 @@
         <nuxt-link to="/">
           <back class="fill-dark dark:fill-light" width="40px" height="40px" />
         </nuxt-link>
-        <div class="w-full flex justify-center flex-col center items-center">
-          <h1 class="text-xl font-semibold">{{ project.title }}</h1>
+        <div class="w-full flex flex-col items-end md:items-center">
+          <h1 class="text-lg md:text-xl font-semibold">{{ project.title }}</h1>
           <h2>{{ project.scope }}</h2>
         </div>
       </div>
-      <p class="mt-5 max-w-[1000px] text-center">
+      <p class="mt-5 max-w-[1000px] text-right md:text-center">
         {{ project.description }}
       </p>
     </header>
@@ -32,6 +33,7 @@
       <nuxt-img :src="items.imgUrl" class="w-full rounded-xl drop-shadow-lg" />
     </div>
     <Footer />
+    <scroll-top />
   </div>
 </template>
 <script>
@@ -39,10 +41,12 @@ import Footer from '~/components/footer'
 import { projects } from 'static/data'
 import back from 'static/icons/back.svg'
 import common from '~/mixins/common'
+import ScrollTop from '~/components/scrollTop.vue'
 export default {
   mixins: [common],
   components: {
     Footer,
+    ScrollTop,
     back,
   },
   data() {
