@@ -44,6 +44,10 @@ export default {
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [],
 
+  googleAnalytics: {
+    id: 'UA-XXX-X'
+  },
+
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: false,
   pageTransition: {
@@ -51,7 +55,7 @@ export default {
   },
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   target: 'static',
-  buildModules: ['@nuxt/postcss8', '@nuxtjs/color-mode','@nuxt/image'],
+  buildModules: ['@nuxt/postcss8', '@nuxtjs/color-mode','@nuxt/image','@nuxtjs/google-analytics'],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: ['nuxt-svg-loader'],

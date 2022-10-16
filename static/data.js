@@ -3,7 +3,7 @@ export const profile = {
   avatarImg: 'avatar.jpg',
   profileTitle: 'UI/UX Designer & Front-End Developer',
   aboutMe:
-    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+    "Hi, I'm Mustafa. I'am UI/UX Designer & Front-End developer who cares deeply about user experience. I have been worked as a full stack developer and designer in many mobile and web projects since 2006. Since 2017, I have focused mostly on product design and front-end development.<br></a> I'm currently working at <a href='https://www.trainplanet.com' target='_blank' style='color:#DB6484; font-weight:bold;'>Trainplanet</a>. I'm vegan, married, dog dad, enduro rider and RV camp lover.",
   socials: {
     dribble: 'https://dribbble.com/mustafaguney',
     behance: 'https://www.behance.net/mustafagney',
