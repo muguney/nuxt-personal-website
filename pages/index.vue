@@ -9,8 +9,7 @@
       />
       <h1 class="text-xl font-semibold">{{ profile.name }}</h1>
       <h2>{{ profile.profileTitle }}</h2>
-      <p class="mt-3 max-w-[1200px] text-center leading-relaxed">
-        {{ profile.aboutMe }}
+      <p class="mt-3 max-w-[1200px] text-center leading-relaxed" v-html="profile.aboutMe">
       </p>
       <social-buttons class="mt-5 pt-5 border-t-[1px] dark:border-gray-600" />
       <h3 class="mt-[65px] font-semibold text-lg">Tools & Langs</h3>
