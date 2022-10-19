@@ -32,6 +32,8 @@ export default {
         color: '#f7f7f7',
         href: '/fav/safari-pinned-tab.svg',
       },
+      { rel: 'preconnect', href: "https://fonts.gstatic.com" },
+      { rel: 'stylesheet', href: "https://fonts.googleapis.com/css2?family=Saira:wght@400;600&display=swap'" }
     ],
   },
 
