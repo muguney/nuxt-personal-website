@@ -1,19 +1,13 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Mustafa Güney | UX/UI Designer | Front-End Developer',
+    title: 'title',
     htmlAttrs: {
       lang: 'en',
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      {
-        hid: 'description',
-        name: 'description',
-        content:
-          "I'm a UI/UX Designer & Front-End Developer based in Alanya, Turkey. I design mobile apps & websites also build interactive websites that run across platforms & devices.",
-      },
       { name: 'format-detection', content: 'telephone=no' },
       { name: 'msapplication-TileColor', content: '#f7f7f7' },
       { name: 'theme-color', content: '#f5f5f5' },

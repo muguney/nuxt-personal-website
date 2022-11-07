@@ -52,6 +52,8 @@ export default {
   data() {
     return {
       project: [],
+      meta_title: '',
+      meta_desc: '',
     }
   },
   mounted() {
@@ -69,6 +71,9 @@ export default {
       }
     })
     this.project = newArr.find((x) => (x.urlParam = this.$route.params.name))
+    this.meta_title = 'Project - ' + this.project.title
+    this.meta_desc = this.project.description
+    this.ogImage = this.project.images[0].imgUrl
   },
 }
 </script>
