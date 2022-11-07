@@ -9,8 +9,10 @@
       />
       <h1 class="text-xl font-semibold">{{ profile.name }}</h1>
       <h2>{{ profile.profileTitle }}</h2>
-      <p class="mt-3 max-w-[1200px] text-center leading-relaxed" v-html="profile.aboutMe">
-      </p>
+      <p
+        class="mt-3 max-w-[1200px] text-center leading-relaxed"
+        v-html="profile.aboutMe"
+      ></p>
       <social-buttons class="mt-5 pt-5 border-t-[1px] dark:border-gray-600" />
       <h3 class="mt-[65px] font-semibold text-lg">Tools & Langs</h3>
       <icon-button :buttons="tools" class="mb-4 mt-5" :onlyIcon="false" />
@@ -42,13 +44,14 @@
 <script>
 import Footer from '~/components/footer'
 import ProjectCard from '~/components/projectCard'
-import { tools, langs, profile, projects } from 'static/data'
+import { tools, langs, profile, projects, site } from 'static/data'
 import iconButton from '~/components/iconButton'
 import avatar from '~/components/avatar'
 import SocialButtons from '~/components/socialButtons'
 import ScrollTop from '~/components/scrollTop.vue'
-
+import common from '~/mixins/common'
 export default {
+  mixins: [common],
   components: {
     Footer,
     ProjectCard,
@@ -60,6 +63,8 @@ export default {
   name: 'IndexPage',
   data() {
     return {
+      meta_title: site.homePageTitle,
+      meta_desc: site.homePageDesc,
       profile: profile,
       tools: tools,
       langs: langs,

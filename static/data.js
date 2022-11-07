@@ -1,3 +1,8 @@
+export const site = {
+  domain: "https://www.mustafaguney.com",
+  homePageTitle: "Mustafa Güney | UX/UI Designer | Front-End Developer",
+  homePageDesc: "I'm a UI/UX Designer & Front-End Developer based in Alanya, Turkey. I design mobile apps & websites also build interactive websites that run across platforms & devices."
+}
 export const profile = {
   name: 'Mustafa Güney',
   avatarImg: 'avatar.jpg',

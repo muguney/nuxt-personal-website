@@ -1,3 +1,4 @@
+import { site } from 'static/data'
 export default {
   methods: {
     fixUrl(x) {
@@ -18,5 +19,45 @@ export default {
         .replace(/ç/g, 'c')
         .replace(/ş/g, 's')
     },
+  },
+  head() {
+    const data = {
+      title: this.meta_title,
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.meta_desc ,
+        },
+        {
+          hid: 'og:title',
+          property: 'og:title',
+          content: this.meta_title ,
+        },
+        {
+          hid: 'og:description',
+          property: 'og:description',
+          content: this.meta_desc,
+        },
+        {
+          hid: 'og:title',
+          property: 'og:title',
+          content: this.meta_title,
+        },
+        {
+          hid: 'og:url',
+          property: 'og:url',
+          content: site.domain + this.$route.path,
+        },
+        {
+          hid: 'og:image',
+          property: 'og:image',
+          content: this.ogImage
+            ? site.domain + this.ogImage
+            : site.domain + '/og-image.png',
+        },
+      ],
+    }
+    return data
   },
 }
