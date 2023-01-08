@@ -17,7 +17,7 @@
       <h3 class="mt-[65px] font-semibold text-lg">Tools & Langs</h3>
       <icon-button :buttons="tools" class="mb-4 mt-5" :onlyIcon="false" />
       <icon-button :buttons="langs" class="mb-5" :onlyIcon="false" />
-      <h3 class="mt-52 mb-5 text-xl font-semibold">Projects</h3>
+      <h3 class="mt-[80px] mb-5 text-xl font-semibold">Projects</h3>
       <div
         class="
           max-w-[1440px]
@@ -68,7 +68,7 @@ export default {
       profile: profile,
       tools: tools,
       langs: langs,
-      projects: projects,
+      projects: projects.sort((a, b) => b.rowId - a.rowId)
     }
   },
   mounted() {},

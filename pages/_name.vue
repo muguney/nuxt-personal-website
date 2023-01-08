@@ -56,6 +56,9 @@ export default {
       meta_desc: '',
     }
   },
+  beforeMount(){
+
+  },
   mounted() {
     // We created new array
     // We converted title and create urlParam field like url paramater with fixurl func for find which project page we are
@@ -70,7 +73,7 @@ export default {
         images: x.images,
       }
     })
-    this.project = newArr.find((x) => (x.urlParam = this.$route.params.name))
+    this.project = newArr.find((x) => (x.urlParam == this.$route.params.name))
     this.meta_title = 'Project - ' + this.project.title
     this.meta_desc = this.project.description
     this.ogImage = this.project.images[0].imgUrl
