@@ -33,7 +33,7 @@
           bottom-0
         "
       >
-        <h4 class="font-semibold dark:text-dark text-base md:text-lg">{{ title }}</h4>
+        <h4 class="font-semibold text-center dark:text-dark text-base  md:text-md px-3">{{ title }}</h4>
         <span class="dark:text-dark text-sm md:text-base">{{ scope }}</span>
       </div>
       <nuxt-img

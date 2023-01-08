@@ -68,7 +68,7 @@ export default {
       profile: profile,
       tools: tools,
       langs: langs,
-      projects: projects,
+      projects: projects.sort((a, b) => b.rowId - a.rowId)
     }
   },
   mounted() {},
