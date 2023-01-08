@@ -1,5 +1,5 @@
 export default {
-  // Build Test
+
   head: {
     title: 'title',
     htmlAttrs: {
